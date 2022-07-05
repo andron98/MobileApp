@@ -1,0 +1,438 @@
+@import "vars"
+@import "reset"
+
+body
+	font-family: "Roboto", sans-serif
+	font-weight: normal
+	font-style: normal
+	min-width: 320px
+	line-height: 1
+	overflow-x: hidden
+	letter-spacing: 1px
+	line-height: 1.2
+
+// header
+.header__fixed
+	position: fixed
+	z-index: 5
+	top: 0
+	left: 0
+	width: 100%
+	padding: 30px 0 0 0
+
+.header__logo
+	img
+		width: 150px
+		height: 48px
+
+.header_nav_link
+	display: inline-block
+	font-size: 37px
+	color: white
+	vertical-align: baseline
+	img
+		width: 48px
+		height: 58px
+	margin-left: 15px
+	&:hover
+		color: white
+
+.header__nav
+	float: right
+
+@media only screen and (min-width : 0px) and (max-width : 768px)
+	.header_nav_link__menu_text
+		display: none
+	.header_nav_link__img_link
+		img
+			height: 53px
+
+
+///////////////////
+
+
+//Start_S
+.start_s
+	height: 100vh
+	background-image: url('../img/header_img.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: transparentize(#000, .65)
+		z-index: 1
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+
+
+.start_s__text
+	font-family: "Roboto", sans-serif
+	font-weight: 300
+	position: relative
+	z-index: 2
+	font-size: 70px
+	color: white
+	span
+		color: $mainColor
+	text-align: center
+
+.start_s__scroll_down_img
+	position: absolute
+	bottom: 1%
+	left: 50%
+	display: block
+	margin: auto
+/////////////////////////////////
+
+//about_us__s
+
+.about_us__s
+	margin: 70px auto
+	h3
+		font-size: 48px
+
+.about_us__s__title
+	font-family: "Roboto", sans-serif
+	font-weight: 300
+
+.about_us__s__h_line
+	margin: auto 0 15px 0
+	border: 1px solid $addidionalColor
+	width: 15%
+
+.about_us__s__text
+	font-size: 18px
+	color: $textColor
+
+.about_us__s__pics
+	margin: 80px auto
+	// width: 100%
+.about_us__s__pic_mobile
+	@media only screen and (max-width : 992px)
+		.img-responsive
+			max-width: none
+			margin: auto
+	img
+		@media only screen and (max-width : 400px)
+			height: 100%
+			width: 100%
+
+	// @media only screen and (max-width : 992px)
+	// 	margin: 30px auto
+	// 	height: 1000px
+	// @media only screen and (min-width : 430px)
+	// 	.about_us__s__pic_mobile
+	// 		display: none
+// .about_us__s__pic_mobile
+// 	@media only screen and (max-width : 430px)
+// 		display: flex
+// 		align-items: center
+// 		justify-content: center
+// 		flex-wrap: wrap
+// 		flex-direction: column
+// 		margin: 10px
+
+////////////////////////////////
+
+//What we do section
+
+.what_we_do__s
+	display: block
+	font-family: "Roboto", sans-serif
+	font-weight: 300
+	font-size: 20px
+	text-align: center
+
+.what_we_do__s__line
+	border: 1px solid $addidionalColor
+	width: 8%
+	margin-top: 30px
+	margin-bottom: 60px
+
+.what_we_do__s__title
+	p
+		font-size: 50px
+		font-weight: 300
+
+.what_we_do__s__block
+	text-align: center
+	@media only screen and (max-width : 992px)
+		.img-responsive
+			max-width: none
+			margin: auto
+
+.what_we_do__s__img_block
+	display: inline-block
+
+.what_we_do__s__pic_2
+	@media only screen and (max-width : 540px)
+		width: 60%
+
+.what_we_do__s__block_text
+	margin: 20px
+	text-align: center
+	h4
+		font-weight: 700
+		margin-bottom: 10px
+
+.what_we_do__s__link
+	display: inline-block
+	text-transform: uppercase
+	text-align: center
+	margin: 25px 0 65px 0
+	font-weight: 400
+	&:link
+		text-decoration: underline
+
+// .what_we_do__s__pic_1
+// 	width: 437px
+// 	height: 420px
+
+// .what_we_do__s__pic_2
+// 	width: 561px
+// 	height: 331px
+//
+// .what_we_do__s__pic_3
+// 	width: 523px
+// 	height: 406px
+
+
+
+// .what_we_do__s__block
+// 	margin-top: 30px
+// 	width: 320px
+// 	height: 320px
+// 	h4
+// 		font-weight: 700
+// 		margin-top: 25px
+// 		text-transform: uppercase
+// 		text-align: center
+// 	img
+// 		display: block
+//
+// .what_we_do__s__block
+// 	display: inline-block
+// 	text-align: center
+// 	width: 33%
+// 	// &:hover
+// 	// 	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5)
+//
+// .what_we_do__s__pic_1
+// 	width: 220px
+// 	height: 210px
+// 	margin-left: 20px
+// .what_we_do__s__pic_2
+// 	width: 280px
+// 	height: 160px
+// 	margin-bottom: 50px
+// .what_we_do__s__pic_3
+// 	width: 260px
+// 	height: 200px
+//
+// .what_we_do__s__block_paragraph
+// 	color: $textColor
+// 	font-weight: normal
+// 	text-align: center
+// 	&:hover
+// 		color: #000
+//
+// .what_we_do__s__link
+// 	margin: 30px auto
+// 	text-transform: uppercase
+// 	text-decoration: underline
+// 	text-align: center
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	font-size: 18px
+
+//////////////////////////////
+
+// Portfolio__s
+
+.portfolio__s
+	font-weight: 300
+	font-size: 25px
+	h2,
+	p
+		color: #FFFFFF
+	background-image: url(../img/main_bg.png)
+
+.portfolio__s__title
+	font-weight: 500
+	font-size: 50px
+	margin-top: 100px
+	span
+		color: $mainColor
+
+
+.my_btn
+	font-size: 16px
+	font-weight: 700
+	color: #fff
+	width: 200px
+	height: 25px
+	line-height: 2px
+	border: 24px solid #4CA9FF
+	border-radius: 25px
+	display: block
+	text-align: center
+	margin-top: 70px
+	box-shadow: -7px 14px 49px -6px rgba(76,168,255,0.73)
+	&:hover,
+	&:visited
+		color: #fff
+
+.portfolio__s__paragraph
+	font-size: 17px
+	margin-top: 20px
+	font-weight: 300
+	color: $textColor
+
+
+.portfolio__s__pics
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin: 50px 0 auto auto
+	@media only screen and (max-width : 570px)
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		img
+			margin: auto
+	@media only screen and (max-width : 991px)
+		justify-content: flex-start
+
+
+
+// .portfolio__s__pics
+// 	position: relative
+// 	transition: all .3s
+// 	&:after
+// 		content: ''
+// 		position: absolute
+// 		bottom: -7px
+// 		left: 0
+// 		width: 0
+// 		height: 2px
+// 		background-color: blue
+// 		transition: all .3s
+// 	&:hover
+// 		color: yellow
+// 	&:hover
+// 		&:after
+// 			width: 100%
+
+
+.portfolio__s__works__line
+	border: 1px solid #F0FFFF
+
+
+.portfolio__s__works
+	margin-top: 20px
+	margin-bottom: 40px
+	text-align: left
+	font-size: 20px
+	font-weight: 500
+	@media only screen and (max-width : 991px)
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	a
+		&:visited,
+		&:hover
+			color: #fff
+	span
+		font-size: 15px
+		color: #CFD2FF
+		font-weight: 300
+
+
+//////////////////////////////////
+
+/////Twitter reviews section
+.twiiter_reviews__s__rewiew_block
+	width: 70%
+	margin: 0 auto
+	margin-bottom: 80px
+	box-shadow: -10px 20px 114px -29px rgba(0,0,0,0.4)
+	padding: 5px
+
+.twiiter_reviews__s__rewiew_block_text
+	text-align: center
+	color: $textColor
+	font-weight: 300
+	font-size: 23px
+	span
+		color: $additionalTextColor
+	margin-top: 10px
+
+.twiiter_reviews__s__tw_logo
+	width: 65px
+	height: 65px
+	display: block
+	margin: 30px auto 50px auto
+
+.twiiter_reviews__s__rewiew_block_author
+	span
+		color: $additionalTextColor
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 50px 0
+	img
+		margin-right: 10px
+
+
+//////////////////////////////////
+
+////Finish section
+.finish__s
+	background-image: url(../img/main_bg.png)
+	img
+		width: 150px
+		height: 48px
+	a,
+	p
+		color: white
+	.row
+		margin-top: 50px
+	span
+		color: $additionalTextColor
+
+.finish__s_site_info
+	img
+		margin-top: 20px
+		margin-bottom: 20px
+
+.finish__s_site_info,
+.finish__s_footer
+	display: flex
+	justify-content: space-between
+	@media only screen and (max-width : 580px)
+		display: block
+
+.finish__s_site_info_text
+	font-weight: 300
+	font-size: 17px
+	color: #aeb9d0
+
+.finish__s_footer_line
+	border: 1px solid #8068BD
+	margin-top: 80px
+
+.finish__s_footer
+	margin-top: 15px
+	margin-bottom: 15px
+	text-align: center
+
+//////////////////////////////////////
